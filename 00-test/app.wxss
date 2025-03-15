@@ -1,0 +1,6 @@
+/**app.wxss**/
+@import '/styles/iconfont.wxss';
+
+.c0 {
+    color: red;
+}

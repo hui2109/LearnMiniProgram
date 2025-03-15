@@ -1,0 +1,4 @@
+/* pages/info.wxss */
+.c1 {
+    color: cyan;
+}

@@ -1,0 +1,7 @@
+/* pages/mine/mine.wxss */
+/* flex布局 */
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

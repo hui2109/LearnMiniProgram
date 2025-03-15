@@ -1,0 +1,13 @@
+<!--pages/mine/mine.wxml-->
+<link rel="stylesheet" href="" />
+
+<text>pages/mine/mine.wxml</text>
+
+<view class="box">
+    <view>哈哈哈1</view>
+    <view>哈哈哈2</view>
+</view>
+
+<view>
+    <text class="iconfont icon-xiyiji" style="color: aquamarine;font-size: 50rpx;font-weight: 700;"></text>这是一个冰箱icon
+</view>

@@ -1,0 +1,3 @@
+<view bind:tap="parentHandler" data-parentid="1" data-parentname="Timmy">
+  <button data-id="3" data-name="Tom">事件参数 </button>
+</view>

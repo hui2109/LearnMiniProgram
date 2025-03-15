@@ -1,0 +1,3 @@
+<view bind:tap="parentHandler" mark:pid="1" mark:pname="Tom">
+  <button mark:id="2" mark:name="Jack">按钮</button>
+</view>

@@ -1,0 +1,138 @@
+page {
+  height: 100vh;
+  background-color: #efefef !important;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 16rpx;
+
+  >view {
+    &:nth-child(n+2) {
+      margin: 16rpx;
+    }
+  }
+}
+
+
+// 轮播图区域
+.swiper {
+  border-radius: 10rpx;
+  overflow: hidden;
+
+  swiper {
+    height: 345rpx;
+    background-color: skyblue;
+
+    image {
+      width: 100%;
+      height: 100%;
+      border-radius: 10rpx;
+    }
+
+    // 在 Sass 拓展语言中, & 符号表示父选择器的引用. 它用于在嵌套的选择器中引用父选择器
+    // 下面这段代码在编译以后, 生成的代码是 swiper-item:first-child
+
+    swiper-item {
+      &:first-child {
+        background-color: lightsalmon;
+      }
+
+      &:last-child {
+        background-color: lightgreen;
+      }
+    }
+  }
+}
+
+// 公司信息区域
+.info {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20rpx 16rpx;
+  border-radius: 10rpx;
+  font-size: 24rpx;
+
+  .iconfont {
+    font-size: 24rpx;
+  }
+}
+
+// 商品导航区域
+.good-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20rpx 16rpx;
+  border-radius: 10rpx;
+
+  view {
+    navigator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    image {
+      width: 80rpx;
+      height: 80rpx;
+    }
+
+    text {
+      font-size: 24rpx;
+      margin-top: 12rpx;
+    }
+  }
+}
+
+// 推荐商品区域
+.good-hot {
+  background-color: #fff;
+  padding: 16rpx;
+  border-radius: 10rpx;
+  font-size: 24rpx;
+
+  scroll-view {
+    width: 100%;
+    white-space: nowrap;
+
+    view {
+      display: inline-block;
+      width: 320rpx;
+      height: 386rpx;
+      margin-right: 16rpx;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .good-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        text {
+          &:first-of-type {
+            font-weight: bold;
+          }
+        }
+
+        image {
+          width: 100%;
+          height: 320rpx;
+          border-radius: 10rpx;
+        }
+      }
+    }
+  }
+}
+
+// .test {
+//   height: 400rpx;
+//   // background-color: lightcoral;
+//   // background-image: url("../../assets/bgimage.png"); // 无效的背景图
+//   // background-image: url("http://8.131.91.46:6677/bgimage.png");
+//   background-image: url(data:image/png;base64,
+
+// }

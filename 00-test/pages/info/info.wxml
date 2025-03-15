@@ -1,0 +1,30 @@
+<!--pages/info.wxml-->
+<text>源代码标签，类似span</text>
+
+<view bind:tap="clickMe" data-name="hui" data-id="1122">点我！</view>
+
+<view>view标签，类似div</view>
+
+<view>
+    <view class="c0">哈哈哈1</view>
+    <view class="c1">哈哈哈2</view>
+</view>
+
+<image src="/images/路飞.jpg" mode="aspectFill" />
+<view></view>
+<icon type="success" size="50rpx" />
+
+<view>两种跳转到其他页面的方式</view>
+<navigator url="/pages/mine/mine">跳转1-标签形式</navigator>
+<view bind:tap="clickGo">跳转2-API形式</view>
+<view>================================================</view>
+<view>wxml调用js的数据</view>
+<view><text>{{city}}</text></view>
+
+<view>
+    <view wx:for="{{nameList}}" wx:key="index">{{index}}==={{item}}</view>
+    wx:key="index"用于加快速度
+</view>
+
+<view bind:tap="Action">点我展示actionsheet</view>
+<view bind:tap="Uploadfile">上传图片</view>

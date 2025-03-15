@@ -1,0 +1,14 @@
+<view>{{ num }}</view>
+<button bind:tap="updateNum">更新 num</button>
+
+<view class="line"></view>
+
+<view>{{userInfo.name}}</view>
+<view>{{userInfo.age}}</view>
+<button bind:tap="updateUserInfo" type="primary">更新userInfo</button>
+
+<view class="line"></view>
+
+<view wx:for="{{myList}}" wx:key="index">{{item}}</view>
+<view>{{ myList[3].name }}</view>
+<button type="primary" bind:tap="updateList">修改数组类型数据</button>
